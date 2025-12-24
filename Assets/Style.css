@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
  }
+::-webkit-scrollbar{
+                    width: 1vmin;
+                   }
+::-webkit-scrollbar-track{
+                          background: url(../Resource\ Images/background.png) no-repeat center center/cover;
+                         }
+::-webkit-scrollbar-thumb{
+                          background: url(../Resource\ Images/darkmodebackground.jpg) no-repeat center center/cover;
+                         }
 .mediumscreenhide{
                   display: none;
                  }
@@ -533,14 +542,6 @@
                       overflow-x: auto;
                       scrollbar-width: thin;
                      }    
-.offercontainer::-webkit-scrollbar{}
-.offercontainer::-webkit-scrollbar-thumb{
-                                         color: chocolate;
-                                         background-color: chocolate;
-                                        }
-::-webkit-scrollbar-track{
-                          background-color: black;
-                         }
 .offereditem1{
               background: url(../Resource\ Images/Offered1.jpeg) no-repeat center center/cover;
               border: none;
@@ -1340,4 +1341,5 @@
                              }    
   
                           }
+
     
