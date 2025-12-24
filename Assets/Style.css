@@ -486,7 +486,7 @@
                  text-align: center;
                 }
 .bestsoldcake{
-                   background: url(../Resource\ Images/BestSoldcake.jpg) no-repeat center center/cover;
+                   background: url(../Resource\ Images/BestSoldCake.jpg) no-repeat center center/cover;
                    border: none;
                    border-radius: 15rem;
                    margin: 1vmin;
@@ -494,7 +494,7 @@
                    box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
                   }
 .bestsoldpastry{
-                   background: url(../Resource\ Images/BestSoldpastry.jpg) no-repeat center center/cover;
+                   background: url(../Resource\ Images/BestSoldPastry.jpg) no-repeat center center/cover;
                    border: none;
                    border-radius: 15rem;
                    margin: 1vmin;
@@ -502,7 +502,7 @@
                    box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
                   }
 .bestsoldicecream{
-                   background: url(../Resource\ Images/BestSoldicecream.jpg) no-repeat center center/cover;
+                   background: url(../Resource\ Images/BestSoldIceCream.jpg) no-repeat center center/cover;
                    border: none;
                    border-radius: 15rem;
                    margin: 1vmin;
@@ -1338,4 +1338,5 @@
                              }    
   
                           }
+
     
