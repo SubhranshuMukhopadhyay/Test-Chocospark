@@ -1,0 +1,332 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+.hide{
+      display: none;
+     }
+body{
+     min-height: 100vh;
+     background: url(../Resource\ Images/Log\ In\ Images/Background.jpg) no-repeat center/cover;
+     background-attachment: fixed;
+    /* backdrop-filter: blur(1px); */
+     overflow: hidden;
+     cursor: default;
+    }
+.headingdiv{
+            text-align: center;
+            margin-top: 5%;
+           }
+.headerbutton{
+              color: red;
+              font-style: italic;
+              font-weight: bolder;
+              font-family: 'Times New Roman', Times, serif;
+              text-decoration: underline;
+              font-size: 500%;
+              background: transparent;
+              border: none;
+             }
+.headerbutton:hover{
+                    color: yellow;
+                    cursor: pointer;
+                   }
+.inputcontainer{
+                text-align: center;
+                margin-left: 35%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                border: none;
+                width: 30%;
+                border-radius: 1rem;
+                color: #fffafa;
+                background: transparent;
+                box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(5px);
+                padding-top: 1%;
+                padding-bottom: 1%;
+               }
+.inputcontainerheader{
+                      margin-bottom: 1rem;
+                     }
+.iddiv{
+       margin-bottom: 2rem;
+      }
+.idinput{
+         height: 2.5rem;
+         background: transparent;
+         color: white;
+         width: 20rem;
+         border-radius: 2rem;
+         border: 1px solid white;
+         padding-left: 3%;
+        }
+.idinput::placeholder{
+                      color: #fffafa;
+                      font-style: italic;
+                      font-weight: normal;
+                     }
+.passwordinput{
+               height: 2.5rem;
+               background: transparent;
+               color: white;
+               width: 20rem;
+               border-radius: 2rem;
+               border: 1px solid white;
+               padding-left: 3%;
+              }
+.passwordinput::placeholder{
+                            color: #fffafa;
+                            font-style: italic;
+                            font-weight: normal;
+                           }
+.forgotpassworddiv{
+                   margin-top: 3%;
+                   float: right;
+                   margin-right: 12%;
+                  }
+.logincontainerforgotpasswordbutton{
+                                    background: transparent;
+                                    color: #fffafa;
+                                    border: none;
+                                   }
+.logincontainerforgotpasswordbutton:hover{
+                                          cursor: pointer;
+                                          text-decoration: underline;
+                                         }
+.loginbuttondiv{
+                margin-top: 10%;
+               }
+.loginbutton{
+             height: 3rem;
+             width: 20rem;
+             border-radius: 2rem;
+             border: none;
+             font-style: italic;
+             font-size: 1rem;
+             color: red;
+             font-weight: bolder;
+             transition: all 0.5s ease;
+            }
+.loginbutton:hover{
+                   cursor: pointer;
+                   background-color: red;
+                   color: #fffafa;
+                  }
+.createaccountdiv{
+                  margin-top: 3%;
+                 }
+.createaccountbutton{
+                     background: none;
+                     border: none;
+                     color: #fffafa;
+                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                     font-weight: normal;
+                    }
+.createaccountbutton:hover{
+                           cursor: pointer;
+                           text-decoration: underline;
+                          }             
+.forgotpasswordcontainer{
+                         text-align: center;
+                         margin-left: 24.6%;
+                         margin-top: 1%;
+                         border: 1px solid red;
+                         width: 50%;
+                         border-radius: 3rem;
+                         color: #fffafa;
+                         background: transparent;
+                         box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                         backdrop-filter: blur(20px);
+                         padding-top: 1%;
+                         padding-bottom: 1%;
+                        }   
+.forgotpasswordheader{
+                      margin-bottom: 3%;
+                     }
+.forgotpasswordcontainerinputlist{
+                                  text-align: center;
+                                  list-style: none;
+                                 }  
+.forgotpasswordcontainerinputlist li{
+                                     margin-bottom: 3%;
+                                    }
+.forgotpasswordcontainerinputlist li span{
+                                          font-size: 1.5rem;
+                                         }   
+.forgotpasswordcontainerinputlist li input{
+                                           height: 2.5rem;
+                                           width: 20rem;
+                                           border-radius: 2rem;
+                                           border: 1px solid white;
+                                           background: transparent;
+                                           text-align: center;
+                                           color: #fffafa;
+                                          }  
+.forgotpasswordcontainerinputlist li input::placeholder{
+                                                        color: #fffafa;
+                                                       } 
+.email{
+       margin-right: 16.5%;
+      }
+.phone{
+       margin-right: 25%;
+      }
+.otp{
+     margin-right: 11%;
+    }                                                       
+.forgotpasswordnewpassword{
+                           margin-right: 5%;
+                          }          
+.forgotpasswordbutton{
+                      height: 3rem;
+                      width: 30rem;
+                      border-radius: 2rem;
+                      border: none;
+                      font-style: italic;
+                      font-size: 1rem;
+                      color: red;
+                      font-weight: bolder;
+                      transition: all 0.5s ease;
+                      background-color: #fffafa;
+                     }
+.forgotpasswordbutton:hover{
+                            cursor: pointer;
+                            background-color: red;
+                            color: #fffafa;
+                            text-decoration: none;
+                           }        
+.createaccountcontainer{
+                        text-align: center;
+                        margin-left: 24.6%;
+                        margin-top: 1%;
+                        border: 1px solid red;
+                        width: 50%;
+                        border-radius: 3rem;
+                        color: #fffafa;
+                        background: transparent;
+                        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                        backdrop-filter: blur(20px);
+                        padding-top: 1%;
+                        padding-bottom: 1%;
+                       }    
+.namelebellist{
+              margin-top: 1%;
+              list-style: none;
+              display: flex;
+              flex-direction: row;
+              text-align: center;
+              font-size: larger;
+              font-style: italic;
+              font-weight: bolder;
+              gap: 19%;
+             }               
+.firstnamelebel{
+                margin-left: 11%;
+               }
+.nameinputlist{
+               margin-bottom: 1%;
+               list-style: none;
+               display: flex;
+               flex-direction: row;
+               gap: 2.5%;
+              }
+.nameinputs{
+            height: 2rem;
+            width: 13rem;
+            border-radius: 2rem;
+            border: 1px solid white;
+            margin-left: 5.5%;
+            background: none;
+            color: #fffafa;
+           }
+.nameinputs::placeholder{
+                         color: white;
+                         text-align: center;
+                        }
+.contactlebellist{
+                  margin-top: 1%;
+                  list-style: none;
+                  display: flex;
+                  flex-direction: row;
+                  text-align: center;
+                  font-size: larger;
+                  font-style: italic;
+                  font-weight: bolder;
+                  margin-left: 25%;
+                  gap: 35%;
+                 }  
+.contactinputlist{
+                  list-style: none;
+                  display: flex;
+                  flex-direction: row;
+                  margin-left: 14%;
+                  gap: 10%;
+                  margin-bottom: 1%;
+                 }
+.contactinputs{
+               height: 2rem;
+               width: 13rem;
+               border-radius: 2rem;
+               border: 1px solid white;
+               margin-left: 5.5%;
+               background: none;
+               color: #fffafa;
+              }    
+.contactinputs::placeholder{
+                            color: white;
+                            text-align: center;
+                           }
+.passwordlebellist{
+                   display: flex;
+                   flex-direction: row;
+                   list-style: none;
+                   margin-left: 26.5%;
+                   gap: 35%;
+                  }
+.passwordinputlist{
+                   list-style: none;
+                   display: flex;
+                   flex-direction: row;
+                   margin-left: 14%;
+                   gap: 10%;
+                   margin-bottom: 1%;
+                  }
+.passwordinputs{
+                height: 2rem;
+                width: 13rem;
+                border-radius: 2rem;
+                border: 1px solid white;
+                margin-left: 5.5%;
+                background: none;
+                color: #fffafa;
+               }   
+.passwordinputs::placeholder{
+                             color: white;
+                             text-align: center;
+                            }       
+.signupbutton{
+              height: 3rem;
+              width: 20rem;
+              border-radius: 2rem;
+              border: none;
+              font-style: italic;
+              font-size: 1rem;
+              color: red;
+              font-weight: bolder;
+              transition: all 0.5s ease;
+             }     
+.signupbutton:hover{
+                    cursor: pointer;
+                    background-color: red;
+                    color: #fffafa;
+                   }     
+.taglinediv{
+            color: #fffafa;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 250%;
+            text-align: center;
+            margin-top: 3%;
+           }
