@@ -1,0 +1,1552 @@
+.hide{
+      display: none;
+     }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+::-webkit-scrollbar{
+                    width: 1vmin;
+                   }
+::-webkit-scrollbar-track{
+                          background: url(../Resource\ Images/background.png) no-repeat center center/cover;
+                         }
+::-webkit-scrollbar-thumb{
+                          background: url(../Resource\ Images/darkmodebackground.jpg) no-repeat center center/cover;
+                         }
+.mediumscreenhide{
+                  display: none;
+                 }
+.lightmodebody{
+               min-height: 100vh;
+               background: url(../Resource\ Images/background.png) no-repeat center center/cover;
+               background-attachment: fixed;
+               backdrop-filter: blur(5px);
+              }
+.darkmodebody{
+              min-height: 100vh;
+              background: url(../Resource\ Images/darkmodebackground.jpg) no-repeat center center/cover;
+              background-attachment: fixed;
+             }
+.navbar{
+        align-items: center;
+        justify-content: center;
+        height: 83px;
+        width: 99%;
+        position: sticky;
+        top: 0;
+        background: transparent;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        border-radius: 1rem;
+        margin-left: 1vmin;
+        margin-right: 1vmin;
+        margin-top: 1vmin;
+       }
+.navbar-div1{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             width: 100%;
+             max-width: 1600px;
+            }
+.navbar-websitename{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: yellow;
+                    text-decoration: underline;
+                    font-style: italic;
+                    margin-left: 45%;
+                    cursor: default;
+                   }
+.navigationbuttons{
+                            display: flex;
+                            text-align: center;
+                            gap: none;
+                            list-style: none;
+                            margin-right: 1%;
+                           }
+.navigationbuttons li button{
+                             text-decoration: none;
+                             color: yellow;
+                             background-color: chocolate;
+                             font-size: 1rem;
+                             font-weight: 500;
+                             padding: 1vmin;
+                             margin-right: 1vmin;
+                             border-radius: 20px;
+                             border: 2px solid transparent;
+                             white-space: nowrap; 
+                            }
+.navigationbuttons li button:hover{
+                                   background-color: red;
+                                   color: yellow;
+                                   cursor: pointer;
+                                  }
+.navbar-div2{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             width: 100%;
+             padding-top: 1vmin;
+             max-width: 1600px;
+            }
+.itembuttons{
+             display: flex;
+             text-align: center;
+             gap: none;
+             list-style: none;
+             margin-left: 1%;
+            }
+.itembuttons li button{
+                       text-decoration: none;
+                       color: chocolate;
+                       background-color: transparent;
+                       font-size: 1.1rem;
+                       font-weight: bolder;
+                       font-style: italic;
+                       width: 8rem;
+                       height: 2.1rem;
+                       margin-right: 1vmin;
+                       border-radius: 1rem;
+                       border: 5px solid chocolate;
+                       border-top: none;
+                       white-space: nowrap;
+                       transition: transform .1s;
+                      }
+.itembuttons li button:hover{
+                             border-color: red;
+                             color: red;
+                             transform: scale(1.3);
+                             cursor: pointer;
+                            }
+.navbar-div2search{
+                   display: flex;
+                   text-align: center;
+                   gap: none;
+                   list-style: none;
+                  }
+.searchinput{
+             height: 2rem;
+             width: 15rem;
+             margin-right: 1vmin;
+             border-radius: 1rem;
+             border-color: red;
+             color: #fffafa;
+             background: transparent;
+             padding-left: 1%;
+            }
+.searchinput::placeholder{
+                          color: #fffafa;
+                         }
+.searchbutton{
+              height: 2rem;
+              width: 2rem;
+              font-size: 1rem;
+              border-radius: 1rem;
+              background-color: red;
+              border: none;
+              color: #fffafa;
+             }
+.searchbutton:hover{
+                    background-color: blue;
+                    cursor: pointer;
+                   }
+.orderbuttons{
+              display: flex;
+              text-align: center;
+              gap: none;
+              list-style: none;
+             }
+.orderbuttons li button{
+                        text-decoration: none;
+                        color: yellow;
+                        background-color: chocolate;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        padding: 1vmin;
+                        margin-right: 8rem;
+                        border-radius: 20px;
+                        border: 2px solid transparent;
+                        white-space: nowrap; 
+                       }
+.orderbuttons li button:hover{
+                              background-color: red;
+                              color: yellow;
+                              cursor: pointer;
+                             }
+.navigationtoggler{
+                   display: none;
+                  }
+.itemtoggler{
+             display: none;
+            }
+.ordertoggler{
+              display: none;
+             }
+.chippestitemcontainer{
+                       background: url(../Resource\ Images/chippestcontainerbackground.jpg) no-repeat center center/cover;
+                       border: none;
+                       border-radius: 1rem;
+                       margin: 1vmin;
+                       height: 83vh;
+                       cursor: default;
+                      }
+.chippestdivmarketing{
+                      list-style: none;
+                      float: left;
+                      margin-left: 6rem;
+                      margin-top: 10rem; 
+                     }
+.line1{
+       font-size: 5rem;
+       font-weight: bolder;
+       font-style: italic;
+       color: red;
+      }
+.line2{
+       font-size: 2rem;
+       font-style: italic;
+       color: blue;
+      }
+.line3{
+       font-size: 1.3rem;
+       font-style: italic;
+       font-weight: bold;
+       color: rgb(108, 31, 180);
+       margin-top: 2rem;
+      }
+.line4{
+       margin-left: 2.2rem;
+       margin-top: 1rem;
+      }
+.chippestdivbuybutton{
+                      text-decoration: none;
+                      color: chocolate;
+                      background-color: transparent;
+                      font-size: 1.1rem;
+                      font-weight: bolder;
+                      font-style: italic;
+                      width: 10rem;
+                      height: 2.1rem;
+                      margin-right: 1rem;
+                      border-radius: 1rem;
+                      border: 5px solid chocolate;
+                      border-top: none;
+                      white-space: nowrap;
+                      transition: transform .1s;
+                     }
+.chippestdivbuybutton:hover{
+                            border-color: red;
+                            color: red;
+                            transform: scale(1.3);
+                            cursor: pointer;
+                           }
+.mainheadings{
+              color: red;
+              margin-left: 5%;
+              font-style: italic;
+              cursor: default;
+             }                         
+.newitemslist{
+              display: flex;
+              flex-direction: row;
+              list-style: none;
+              height: 60vh;
+              justify-content: center;
+              cursor: default;
+             }
+.newchocolate{
+              background: url(../Resource\ Images/NewCollectionChocolate.jpeg) no-repeat center center/cover;
+              border: none;
+              border-radius: 1rem;
+              margin: 1vmin;
+              width: 24%;
+             }
+.newchocolatediv{
+                 color: yellow;
+                 font-style: italic;
+                 margin-left: 6%;
+                 margin-top: 30%;
+                }
+.newchocolatediv2{
+                  color: #fffafa;
+                  font-style: italic;
+                  margin-left: 6%;
+                  margin-top: 3%;
+                  font-weight: normal;
+                 }
+.newchocolatediv3{
+                  margin-top: 40%;
+                  margin-left: 60%;
+                 }
+.newchocolatebutton{
+                    text-decoration: none;
+                    color: blue;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    font-style: italic;
+                    width: 7rem;
+                    height: 2rem;
+                    margin-right: 1rem;
+                    border-radius: 1rem;
+                    border: none;
+                    white-space: nowrap;
+                    backdrop-filter: blur(10px);
+                   }
+.newchocolatebutton:hover{
+                          color: red;
+                          text-decoration: underline;
+                          cursor: pointer;
+                         }
+.newcake{
+         background: url(../Resource\ Images/NewCollectionCake.jpg) no-repeat center center/cover;
+         border: none;
+         border-radius: 1rem;
+         margin: 1vmin;
+         width: 24%;
+        }
+.newcakediv1{
+             margin-top: 20%; 
+             text-align: center;
+             color: yellow;
+            }
+.newcakediv2{
+             margin-top: 5%;
+             text-align: center;
+             color: #fffafa;
+             font-weight: normal;
+            }
+.newcakediv3{
+             margin-top: 50%;
+             margin-left: 60%;
+            }
+.newcakebutton{
+               text-decoration: none;
+               color: blue;
+               background-color: transparent;
+               font-size: 1rem;
+               font-weight: bolder;
+               font-style: italic;
+               width: 7rem;
+               height: 2rem;
+               margin-right: 1rem;
+               border-radius: 1rem;
+               border: none;
+               white-space: nowrap;
+               backdrop-filter: blur(10px);
+              }
+.newcakebutton:hover{
+                     color: red;
+                     text-decoration: underline;
+                     cursor: pointer;
+                    }
+.newpastry{
+           background: url(../Resource\ Images/NewCollectionChocochipPastry.jpg) no-repeat center center/cover;
+           border: none;
+           border-radius: 1rem;
+           margin: 1vmin;
+           width: 24%;
+          }
+.newpastrydiv{
+              margin-top: 20%;
+              margin-left: 5%;
+              color: yellow;
+              font-style: italic;
+             }
+.newpastrydiv2{
+               margin-top: 3%;
+               margin-left: 8%;
+               font-style: italic;
+               color: #fffafa; 
+               font-weight: normal;
+              }
+.newpastrydiv3{
+               margin-top: 52%;
+               margin-left: 55% 
+              }
+.newpastrybutton{
+                 text-decoration: none;
+                 color: blue;
+                 background-color: transparent;
+                 font-size: 1rem;
+                 font-weight: bolder;
+                 font-style: italic;
+                 width: 8rem;
+                 height: 2rem;
+                 margin-right: 1rem;
+                 border-radius: 1rem;
+                 border: none;
+                 white-space: nowrap;
+                 backdrop-filter: blur(10px);
+                }
+.newpastrybutton:hover{
+                       color: red;
+                       text-decoration: underline;
+                       cursor: pointer;
+                      }
+.newicecream{
+             background: url(../Resource\ Images/NewCollectionRainbowIceCream.jpg) no-repeat center center/cover;
+             border: none;
+             border-radius: 1rem;
+             margin: 1vmin;
+             width: 24%;
+            }
+.newicecreamdiv{
+                color: yellow;
+                font-style: italic;
+                float: right; 
+                margin-right: 5%;
+                margin-top: 10%;
+               }
+.newicecreamdiv2{
+                 text-align: center;          
+                 margin-top: 50%;
+                 font-style: italic;
+                 color: #fffafa;
+                }
+.newicecreamdiv3{
+                 margin-top: 36%;
+                 margin-left: 55%;
+                }
+.newicecreambutton{
+                   text-decoration: none;
+                   color: blue;
+                   background-color: transparent;
+                   font-size: 1rem;
+                   font-weight: bolder;
+                   font-style: italic;
+                   width: 8rem;
+                   height: 2rem;
+                   margin-right: 1rem;
+                   border-radius: 1rem;
+                   border: none;
+                   white-space: nowrap;
+                   backdrop-filter: blur(10px);
+                  }
+.newicecreambutton:hover{
+                         color: red;
+                         text-decoration: underline;
+                         cursor: pointer;
+                        }
+.bestsolditems{
+              display: flex;
+              flex-direction: row;
+              list-style: none;
+              height: 55vh;
+              justify-content: center;
+             }
+.bestsoldchocolate{
+                   background: url(../Resource\ Images/BestSoldChocolate.jpeg) no-repeat center center/cover;
+                   border: none;
+                   border-radius: 15rem;
+                   margin: 1vmin;
+                   width: 24%;
+                   box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+                  }
+.descriptionlist{
+                 margin-top: 65%; 
+                 text-align: center;
+                 color: yellow;
+                 font-size: large;
+                 font-weight: bolder;
+                 font-style: italic;
+                 list-style: none;
+                 cursor: default;
+                }
+.chocolatepricetag{
+                   backdrop-filter: blur(10px);
+                   width: 30%;
+                   margin-left: 35%;
+                   border-radius: 0.5rem;
+                   border-bottom: none;
+                   text-align: center;
+                  }
+.chocolatename{
+               border-top: none;
+               margin-top: 1%;
+               margin-bottom: 1%;
+               text-align: center;
+              }
+.namebutton{
+            background: none;
+            backdrop-filter: blur(10px);
+            border: none;
+            color: yellow;
+            font-size: large;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 0.5rem;
+            padding-left: 1vmin;
+            padding-right: 1vmin;
+           }
+.namebutton:hover{
+                  text-decoration: underline;
+                  color: red;
+                  opacity: 0.7;
+                  cursor: pointer;
+                 }
+.chocolaterating{
+                 backdrop-filter: blur(10px);
+                 width: 35%;
+                 margin-left: 32%;
+                 border-radius: 0.5rem;
+                 text-align: center;
+                }
+.chocolatereview{
+                 backdrop-filter: blur(10px);
+                 width: 30%;
+                 margin-left: 34%;
+                 border-radius: 0.5rem;
+                 text-align: center;
+                }
+.bestsoldcake{
+                   background: url(../Resource\ Images/BestSoldCake.jpg) no-repeat center center/cover;
+                   border: none;
+                   border-radius: 15rem;
+                   margin: 1vmin;
+                   width: 24%;
+                   box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+                  }
+.bestsoldpastry{
+                   background: url(../Resource\ Images/BestSoldPastry.jpg) no-repeat center center/cover;
+                   border: none;
+                   border-radius: 15rem;
+                   margin: 1vmin;
+                   width: 24%;
+                   box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+                  }
+.bestsoldicecream{
+                   background: url(../Resource\ Images/BestSoldIcecream.jpg) no-repeat center center/cover;
+                   border: none;
+                   border-radius: 15rem;
+                   margin: 1vmin;
+                   width: 24%;
+                   box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+                  }
+.icecreamdescriptionlist{
+                         margin-top: 60%; 
+                         text-align: center;
+                         color: yellow;
+                         font-size: large;
+                         font-weight: bolder;
+                         font-style: italic;
+                         list-style: none;
+                         cursor: default;
+                        }     
+.offercontainer{
+                display: flex;
+                flex-direction: row;
+                height: 63vh;
+                width: 98.5vw;
+                overflow-x: hidden;
+                white-space: nowrap;  
+               } 
+.offercontainer:hover{
+                      overflow-x: auto;
+                      scrollbar-width: thin;
+                     }    
+.offereditem1{
+              background: url(../Resource\ Images/Offered1.jpeg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }    
+.offereditem2{
+              background: url(../Resource\ Images/Offered2.jpeg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offereditem3{
+              background: url(../Resource\ Images/Offered3.jpg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offereditem4{
+              background: url(../Resource\ Images/Offered4.jpg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offereditem5{
+              background: url(../Resource\ Images/Offered5.jpg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offereditem6{
+              background: url(../Resource\ Images/Offered6.jpg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offereditem7{
+              background: url(../Resource\ Images/Offered7.jpg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+              display: inline-block;
+             }  
+.offereditem8{
+              background: url(../Resource\ Images/Offered8.jpeg) no-repeat center center/cover;
+              border: none;
+              border-radius: 15rem;
+              margin: 1vmin;
+              height: 55vh;
+              width: 25%;
+              flex-shrink: 0;
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+             }  
+.offerditeminsidelist{
+                      list-style: none;
+                      font-weight: bolder;
+                      font-style: italic;
+                     }
+.discountrow{
+             margin-left: 20%;
+             margin-top: 20%;
+            }       
+.discountcontainer{
+                   border: none;
+                   text-align: center;
+                   background-color: yellow;
+                   color: black;
+                   height: 3vh;
+                   width: 6vw;
+                  }     
+.pricerow{
+          margin-top: 40%;
+          text-align: center;
+          color: yellow;
+          backdrop-filter: blur(10px);
+          width: 30%;
+          margin-left: 35%;
+          border-radius: 0.5rem;
+          border-bottom: none;
+         }
+.buttonrow{
+           border-top: none;
+           margin-top: 1%;
+           margin-bottom: 1%;
+           text-align: center;
+          }
+.ratingrow{
+           backdrop-filter: blur(10px);
+           width: 35%;
+           margin-left: 36%;
+           border-radius: 0.5rem;
+           color: yellow;
+           text-align: center;
+          }
+.reviewsrow{
+            backdrop-filter: blur(10px);
+            width: 28%;
+            margin-left: 36%;
+            border-radius: 0.5rem; 
+            color: yellow;
+            text-align: center;
+           }
+.seasonallist{
+              display: flex;
+              flex-direction: row;
+              list-style: none;
+              height: 75vh;
+              justify-content: center;
+              margin-top: 2%;
+              margin-bottom: 2%;
+             }  
+.seasonalcontainer1{
+                    background: url(../Resource\ Images/WinterCollectionBackground.jpg) no-repeat center center/cover;
+                    width: 50%;
+                    border-top-left-radius: 1rem;
+                    border-bottom-left-radius: 1rem;
+                    margin-right: 1%;
+                    cursor: default;
+                   }      
+.seasonalconatiner1list{
+                        list-style: none;
+                        color: yellow;
+                        font-style: italic;
+                       }  
+.s1r1{
+      font-size: 2rem;
+      margin-top: 5%;
+      margin-left: 60%;
+     }  
+.s1r2{
+      font-size: 3rem;
+      margin-left: 50%;
+     }  
+.s1r3{
+      font-size: 3rem;
+      margin-left: 45%;
+     }
+.s1r4{
+      margin-top: 30%;
+      margin-left: 5%;
+     }       
+.s1button{
+          background-color: black;
+          color: #fffafa;
+          border: none;
+          height: 2.5rem;
+          width: 6rem;
+          border-radius: 1rem;
+          font-size: 1rem;
+          font-weight: bolder;
+          white-space: nowrap;
+          transition: transform .1s;
+         }           
+.s1button:hover{
+                color: black;
+                background-color: #fffafa;
+                transform: scale(1.3);
+                cursor: pointer;
+               }   
+.seasonalcontainer2{
+                    background: url(../Resource\ Images/WinterCollectionOfferedBackground.jpg) no-repeat center center/cover;
+                    width: 25%;
+                    border-top-right-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    cursor: default;
+                   }
+.seasonalconatiner2list{
+                        list-style: none;
+                        font-style: italic;
+                       }
+.s2r1{
+      font-size: 2rem;
+      margin-top: 10%;
+      text-align: center;
+      color: yellow;
+     } 
+.s2r2{
+      font-size: 1.5rem;
+      margin-top: 5%;
+      margin-left: 30%;
+      color: red;
+     }   
+.s2r3{
+      font-size: 1.5rem;
+      margin-top: 1%;
+      margin-left: 40%;
+      color: red;
+     }   
+.s2r4{
+      margin-left: 60%;
+      margin-top: 70%;
+     }
+.s2button{
+          background-color: black;
+          color: #fffafa;
+          border: none;
+          height: 2.5rem;
+          width: 7rem;
+          border-radius: 1rem;
+          font-size: 1rem;
+          font-weight: bolder;
+          white-space: nowrap;
+          transition: transform .1s;
+         }
+.s2button:hover{
+                cursor: pointer;
+                color: black;
+                background-color: #fffafa;
+                transform: scale(1.3);
+               }
+.customcake{
+            background: url(../Resource\ Images/makingofcake.jpg) no-repeat center center/cover;
+            border: none;
+            border-radius: 1rem;
+            margin: 1vmin;
+            height: 83vh;
+            padding-top: 5%;
+            cursor: default;
+           }
+.customcakeheading{
+                   color: yellow;
+                   font-style: italic;
+                   font-size: 5rem;
+                   margin-left: 10%;
+                  }
+.customcaketagline{
+                   color: red;
+                   font-style: italic;
+                   font-size: 2rem;
+                   margin-left: 10%
+                  }
+.customcakebuttondiv{
+                     margin-left: 80%;
+                     margin-top: 10%;
+                    }
+.customcakebutton{
+                  text-decoration: none;
+                  color: rgb(242, 116, 137);
+                  background-color: red;
+                  font-size: 3rem;
+                  font-weight: bolder;
+                  font-style: italic;
+                  width: auto;
+                  padding-left: 1rem;
+                  padding-right: 1rem;
+                  height: 5%;
+                  border-radius: 1rem;
+                  border: none;
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                  transition: transform .1s;
+                 }
+.customcakebutton:hover{
+                        background-color: blue;
+                        border: 2px solid blue;
+                        transform: scale(1.3); 
+                        cursor: pointer;
+                       }
+.whylist{
+         display: flex;
+         flex-direction: row;
+         list-style: none;
+         height: 35vh;
+         justify-content: center;
+         cursor: default;
+        }
+.productcontainer{
+                  background: transparent;
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                  backdrop-filter: blur(10px);
+                  border: none;
+                  border-radius: 1rem;
+                  margin: 1vmin;
+                  width: 24%;
+                  text-align: center;
+                 }
+.preservativecontainer{
+                       background: transparent;
+                       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                       backdrop-filter: blur(10px);
+                       border: none;
+                       border-radius: 1rem;
+                       margin: 1vmin;
+                       width: 24%;
+                       text-align: center;
+                      }
+.qualitycontainer{
+                  background: transparent;
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                  backdrop-filter: blur(10px);
+                  border: none;
+                  border-radius: 1rem;
+                  margin: 1vmin;
+                  width: 24%;
+                  text-align: center;
+                 }
+.designcontainer{
+                 background: transparent;
+                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                 backdrop-filter: blur(10px);
+                 border: none;
+                 border-radius: 1rem;
+                 margin: 1vmin;
+                 width: 24%;
+                 text-align: center;
+                }
+
+.whyheadings{
+             margin-top: 3%;
+             margin-bottom: 5%;
+             color: blue;
+             font-weight: bolder;
+             font-size: 2rem;
+             font-style: italic;
+            }
+.whydescriptions{
+                  color: red;
+                  font-weight: normal;
+                  font-style: italic;
+                 }
+.discoverylist{
+               display: flex;
+               flex-direction: row;
+               list-style: none;
+               height: 60vh;
+               justify-content: center;
+               cursor: default;
+              }
+.store{
+       background: url(../Resource\ Images/StoreImage.jpg) no-repeat center center/cover;
+       border: none;
+       border-radius: 1rem;
+       margin: 1vmin;
+       width: 30%;
+      }
+.blog{
+      background: url(../Resource\ Images/LaptopImage.jpg) no-repeat center center/cover;
+       border: none;
+       border-radius: 1rem;
+       margin: 1vmin;
+       width: 30%;
+     }
+.story{
+       background: url(../Resource\ Images/PeopleImage.jpg) no-repeat center center/cover;
+       border: none;
+       border-radius: 1rem;
+       margin: 1vmin;
+       width: 30%;
+      }
+.buttondiv{
+           margin-top: 60%;
+           margin-left: 80%;
+          }
+.discoverbutton{
+                background-color: black;
+                color: #fffafa;
+                border: none;
+                height: 2rem;
+                width: 3rem;
+                border-radius: 1rem;
+                font-size: 1rem;
+                font-weight: bolder;
+                white-space: nowrap;   
+                transition: transform .1s;
+               }
+.discoverbutton:hover{
+                      cursor: pointer;
+                      color: black;
+                      background-color: #fffafa;
+                      transform: scale(1.3);
+                     }
+.discoveryheadings{
+                   backdrop-filter: blur(10px);
+                   border-bottom-left-radius: 1rem;
+                   border-bottom-right-radius: 1rem;
+                   width: 80%;
+                   margin-left: 10%;
+                   text-align: center;
+                  }
+.homefooter{
+            background-color: black;
+            color: #fffafa;
+            padding-top: 1%;
+            padding-bottom: 1%;
+           }
+.footerlist{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 10%;
+            margin-left: 1%;
+            margin-right: 1%;
+            cursor: default;
+           }
+.homefooterlinks{
+                 color: yellow;
+                }
+.homefooterlinks:hover{
+                       cursor: pointer;
+                       color: grey;
+                      }
+.emailinput{
+            height: 5vh;
+            width: 20vw;
+           }
+.footersubscribebutton{
+                       height: 5vh;
+                       width: 8vw;
+                       font-size: 1rem;
+                       font-weight: bolder;
+                       border: none;
+                      }
+.footersubscribebutton:hover{
+                             cursor: pointer;
+                             color: #fffafa;
+                             background-color: rgb(79, 160, 79);
+                             border: none;
+                             transition: all 0.1s ease;
+                            }
+.footerlist2{
+             display: flex;
+             flex-direction: row;
+             list-style: none;
+             gap: 33%;
+             margin-top: 1%;
+             margin-left: 1%;
+             margin-right: 1%;
+             font-size: 2rem;
+             cursor: default;
+            }
+.footer-websitename{
+                    font-weight: 600;
+                    color: yellow;
+                    text-decoration: underline;
+                    text-align: center;
+                    font-style: italic;
+                    cursor: default;
+                   }
+.itemcontainers{
+                box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                border-radius: 2rem;
+                height: 18rem;
+                width: 18rem;
+                cursor: default;
+               }
+.itemcontainerheader{
+                     text-align: center;
+                     font-size: 5rem;
+                     font-style: italic;
+                     color: yellow;
+                     background-color: red;
+                    }
+.itemsrow1{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+           margin-top: 1rem;
+           margin-bottom: 1rem;
+           gap: 2rem;
+          }
+.itemsrow2{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+           gap: 2rem;
+          }
+.itemsrow3{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+           margin-top: 1rem;
+           margin-bottom: 1rem;
+           gap: 2rem;
+          }
+.itemsrow4{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+           margin-bottom: 1rem;
+           gap: 2rem;
+          }
+.itemsrow5{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+           margin-bottom: 1rem;
+           gap: 2rem;
+          }
+.itembuttondiv{
+                    text-align: center;
+                    margin-top: 1rem;
+                    gap: 1rem;
+                   } 
+.imagebutton{
+             height: 3rem;
+             width: 3rem;
+             border-radius: 3rem;
+             border: none;
+             font-size: 1.5rem;
+             background-color: #fffafa;
+             color: red;
+             margin-right: 1rem;
+             margin-left: 1rem;
+            }
+.imagebutton:hover{
+                   cursor: pointer;
+                   color: blue;
+                   background-color: red;
+                  }
+.onerowednamebuttondiv{
+                       margin-top: 44%;
+                       text-align: center;
+                       backdrop-filter: blur(10px);
+                       box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                      }
+.tworowednamebuttondiv{
+                       margin-top: 31%;
+                       text-align: center;
+                       box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+                       backdrop-filter: blur(10px);
+                      }
+.itemnamebutton{
+                height: 2rem;
+                font-size: 2rem;
+                color: red;
+                font-weight: normal;
+                font-style: italic;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                border: none;
+                background: none;
+               }
+.itemnamebutton:hover{
+                      cursor: pointer;
+                      color: yellow;
+                      text-decoration: underline;
+                     }
+.itempricediv{
+              text-align: center;
+              margin-top: 1%;
+              color: yellow;
+              font-weight: bolder;
+             }
+.itemratingdiv{
+               text-align: center;
+               margin-top: 1%;
+               color: yellow;
+               font-weight: bolder;
+              }
+/* Chocolates Container */
+.biscoffbarcontainer{
+                     background: url(../Resource\ Images/Chocolates/Biscoff\ Bar.jpg) no-repeat center center/cover;
+                    }
+.mandlbarimagecontainer{
+                        background: url(../Resource\ Images/Chocolates/Milka\ &\ LU\ Chocolate\ Bar.jpeg) no-repeat center center/cover;
+                       }
+.lesabarimagecontainer{
+                       background: url(../Resource\ Images/Chocolates/Lesa\ Natural\ Dark\ Chocolate\ Bar.jpeg) no-repeat center center/cover;
+                      }
+.mixedseedsbarimagecontainer{
+                             background: url(../Resource\ Images/Chocolates/Mixed\ Seeds\ Chocolate\ Bar.jpeg) no-repeat center center/cover;
+                            }
+.fandnbarimagecontainer{
+                        background: url(../Resource\ Images/Chocolates/Dark\ Chocolate\ with\ Dried\ Fruit\ &\ Nuts.jpeg) no-repeat center center/cover;
+                       }
+.aandssaltbarimagecontainer{
+                            background: url(../Resource\ Images/Chocolates/Chocolate\ Bar\ with\ Almond\ &\ Sea\ Salt.jpeg) no-repeat center center/cover;
+                           }
+.lindtbarimagecontainer{
+                        background: url(../Resource\ Images/Chocolates/Lindt\ Milk\ Chocolate\ Bar.jpeg) no-repeat center center/cover;
+                       }
+.minkbarimagecontainer{
+                       background: url(../Resource\ Images/Chocolates/Mink\ Chocolate\ Bar.jpeg) no-repeat center center/cover;
+                      }
+.milkbarimagecontainer{
+                       background: url(../Resource\ Images/Chocolates/Milk\ Chocolate\ Bar.png) no-repeat center center/cover;
+                      }
+.chocoballsimagecontainer{
+                          background: url(../Resource\ Images/Chocolates/Choco\ Balls.jpg) no-repeat center center/cover;
+                         }
+.whonycombbarimagecontainer{
+                            background: url(../Resource\ Images/Chocolates/White\ Honeycomb\ Chocolate\ Bar.jpg) no-repeat center center/cover;
+                           }
+.milkbarimagecontainer{
+                       background: url(../Resource\ Images/Chocolates/Milk\ Chocolate\ Bar.png) no-repeat center center/cover;
+                      }
+
+/* Cakes Container */
+.buttercreamrosettcakecontainer{
+                                background: url(../Resource\ Images/Cakes/Buttercream\ Rosett\ Cake.jpg) no-repeat center center/cover;
+                               }
+.chocolatedripcakecontainer{
+                            background: url(../Resource\ Images/Cakes/Chocolate\ Drip\ Cake.jpg) no-repeat center center/cover;
+                           }
+.chocolaterosecakecontainer{
+                            background: url(../Resource\ Images/Cakes/Chocolate\ Rose\ Cake.jpeg) no-repeat center center/cover;
+                           }
+.chocolatestrawberrycakecontainer{
+                                  background: url(../Resource\ Images/Cakes/Chocolate\ Strawberry\ Cake.jpeg) no-repeat center center/cover;
+                                 }
+.starwberrycreamcakecontainer{
+                              background: url(../Resource\ Images/Cakes/Strawberry\ Cream\ Cake.jpeg) no-repeat center center/cover;
+                             }
+.floralvintagecakecontainer{
+                            background: url(../Resource\ Images/Cakes/Floral\ Vintage\ Cake.jpg) no-repeat center center/cover;
+                           }
+.ganachedripcakecontainer{
+                          background: url(../Resource\ Images/Cakes/Ganache\ Drip\ Cake.jpg) no-repeat center center/cover;
+                         }
+.glutenfreebananacakecontainer{
+                              background: url(../Resource\ Images/Cakes/Gluten\ Free\ Banana\ Cake.webp) no-repeat center center/cover;
+                              }
+.heavenlyrosecakecontainer{
+                           background: url(../Resource\ Images/Cakes/Heavenly\ Rose\ Cake.jpg) no-repeat center center/cover;
+                          }
+.kinderbuenocakecontainer{
+                          background: url(../Resource\ Images/Cakes/Kinder\ Bueno\ Cake.jpg) no-repeat center center/cover;
+                         }
+.ombrerosecakecontainer{
+                        background: url(../Resource\ Images/Cakes/Ombre\ Rose\ Cake.jpg) no-repeat center center/cover;
+                       }
+.pinkblushstrawberrycakecontainer{
+                                  background: url(../Resource\ Images/Cakes/Pink\ Blush\ Strawberry\ Cake.jpg) no-repeat center center/cover;
+                                 }
+.pinkrosettecakecontainer{
+                          background: url(../Resource\ Images/Cakes/Pink\ Rosette\ Cake.jpeg) no-repeat center center/cover;
+                         }
+.pinkrufflecakecontainer{
+                         background: url(../Resource\ Images/Cakes/Pink\ Ruffle\ Cake.jpg) no-repeat center center/cover;
+                        }
+.rainbowflowercakecontainer{
+                            background: url(../Resource\ Images/Cakes/Railbow\ Flower\ Cake.jpg) no-repeat center center/cover;
+                           }
+.ribboncandycakecontainer{
+                          background: url(../Resource\ Images/Cakes/Ribbon\ Candy\ Cake.jpeg) no-repeat center center/cover;
+                         }
+.rubyandrichescakecontainer{
+                            background: url(../Resource\ Images/Cakes/Ruby\ &\ Riches\ Cake.jpg) no-repeat center center/cover;
+                           }
+.sprinklechocolatedripcakecontainer{
+                                    background: url(../Resource\ Images/Cakes/Sprinkle\ Chocolate\ Drip\ Cake.jpg) no-repeat center center/cover;
+                                   }
+
+@media (max-width: 880px) {
+.mediumscreenhide{
+                  display: none;
+                 }
+.navigationtoggler{
+                   display: flex;
+                   text-align: center;
+                   gap: none;
+                   list-style: none;           
+                   display: block;
+                   z-index: 999;
+                   margin-right: 3%;
+                  }
+.navigationtoggler li button{
+                               background: transparent;
+                               color: red;
+                               border-color: red;
+                               border-radius: 1rem;
+                               height: 2rem;
+                               width: 1.5rem;
+                              }
+.navigationbuttons{
+                   flex-direction: column;
+                   align-items: flex-start;
+                   text-align: center;
+                   gap: 0.3rem;
+                   list-style: none;
+                   position: absolute;
+                   height: 35vh;
+                   width: 80px;
+                   top: 0;
+                   right: 0;
+                   margin-right: 1%;
+                   border-radius: 1rem;
+                   padding: 3rem 1.5rem;
+                   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                   background-color: rgb(69, 69, 237);
+                  }
+.navigationbuttons li button{
+                             text-decoration: none;
+                             color: chocolate;
+                             background: transparent;
+                             font-size: 1rem;
+                             font-weight: 500;
+                             border: 2px solid transparent;
+                             white-space: nowrap; 
+                            }
+.navigationbuttons li button:hover{
+                                   background-color: chocolate;
+                                   color: yellow;
+                                  }
+.itemtoggler{
+             display: flex;
+             text-align: center;
+             gap: none;
+             list-style: none;           
+             display: block;
+             z-index: 999;
+             margin-left: 3%;
+            }
+.itemtoggler li button{
+                       background: transparent;
+                       color: red;
+                       border-color: red;
+                       border-radius: 1rem;
+                       height: 2rem;
+                       width: 1.5rem;
+                      }
+.itembuttons{
+             flex-direction: column;
+             align-items: flex-start;
+             text-align: center;
+             gap: 0.3rem;
+             list-style: none;
+             flex-direction: column;
+             position: absolute;
+             height: 33vh;
+             width: 130px;
+             top: 0;
+             left: 0;
+             margin-left: 1%;
+             margin-top: 4%;
+             border-radius: 1rem;
+             padding-top: 3rem;
+             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+             background-color: rgb(69, 69, 237);
+            }
+.itembuttons li button{
+                       text-decoration: none;
+                       color: chocolate;
+                       background: transparent;
+                       font-size: 1.1rem;
+                       font-weight: bolder;
+                       font-style: italic;
+                       margin-right: 1rem;
+                       border: 5px solid transparent;
+                       white-space: nowrap; 
+                      }
+.itembuttons li button:hover{
+                             background-color: #fffafa;
+                             color: red;
+                             cursor: pointer;
+                             border: none;
+                            }
+.navbar-div2search{
+                   display: flex;
+                   text-align: center;
+                   gap: none;
+                   list-style: none;
+                   margin-left: 12%;
+                   padding-right: 1%;
+                  }
+.ordertoggler{
+              display: flex;
+              text-align: center;
+              gap: none;
+              list-style: none;           
+              display: block;
+              z-index: 999;
+              margin-right: 3%;
+             }
+.ordertoggler li button{
+                        background: transparent;
+                        color: red;
+                        border-color: red;
+                        border-radius: 1rem;
+                        height: 2rem;
+                        width: 1.5rem;
+                       }
+.orderbuttons{
+              flex-direction: column;
+              align-items: flex-start;
+              text-align: center;
+              list-style: none;
+              position: absolute;
+              margin-top: 4.1%;
+              height: 20vh;
+              width: 75px;
+              top: 0;
+              right: 0;
+              margin-right: 1%; 
+              padding-top: 3rem;
+              padding-left: 1.3rem;
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+              background-color: rgb(69, 69, 237);
+             }
+.orderbuttons li button{
+                        text-decoration: none;
+                        color: chocolate;
+                        background: transparent;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        border-radius: 2rem;
+                        border: 2px solid transparent;
+                        white-space: nowrap; 
+                       }
+.orderbuttons li button:hover{
+                              background-color: chocolate;
+                              color: #fffafa;
+                              cursor: pointer;
+                             }  
+                          }
+
+@media (max-width: 480px) {
+.mediumscreenhide{
+                  display: none;
+                 }
+.navbar{
+        height: 70px; 
+        backdrop-filter: none;
+       }
+.navbar-websitename{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: red;
+                    text-decoration: none;
+                    font-style: italic;
+                    margin-left: 15%;
+                    margin-right: 5%;
+                    cursor: default;
+                   }
+.navigationtoggler{
+                   display: flex;
+                   text-align: center; 
+                   float: left;
+                   gap: none;
+                   list-style: none;           
+                   display: block;
+                   z-index: 999;
+                  }
+.navigationbuttons{
+                   flex-direction: column;
+                   align-items: flex-start;
+                   text-align: center;
+                   gap: 0.1rem;
+                   list-style: none;
+                   position: absolute;
+                   height: 23vh;
+                   width: 70px;
+                   top: 0;
+                   right: 0;
+                   margin-right: 1%;
+                   border-radius: 1rem;
+                   padding: 2rem 1.5rem;
+                   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                   backdrop-filter: blur(3px);
+                   background: transparent;
+                  }
+.navigationbuttons li button{
+                             text-decoration: none;
+                             color: chocolate;
+                             background: #fffafa;
+                             font-size: 1rem;
+                             font-weight: 500;
+                             border: 2px solid transparent;
+                             white-space: nowrap; 
+                             color: red;
+                            }
+.navigationbuttons li button:hover{
+                                   background-color: chocolate;
+                                   color: yellow;
+                                  }
+.navbar-div2{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             width: 100%;
+             max-width: 1600px;
+             margin-top: 1vmin;
+            }
+.itemtoggler{
+             display: flex;
+             text-align: center;
+             gap: none;
+             list-style: none;           
+             display: block;
+             z-index: 999;
+            }
+.itembuttons{
+             flex-direction: column;
+             align-items: flex-start;
+             text-align: center;
+             gap: 0.3rem;
+             list-style: none;
+             flex-direction: column;
+             position: absolute;
+             height: 36vh;
+             width: 130px;
+             top: 0;
+             left: 0;
+             margin-left: 1%;
+             margin-top: 15%;
+             border-radius: 1rem;
+             padding-top: 2rem;
+             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+             backdrop-filter: blur(3px);
+             background: transparent;
+            }
+.itembuttons li button{
+                       text-decoration: none;
+                       color: red;
+                       background: #fffafa;
+                       font-size: 1.1rem;
+                       font-weight: bolder;
+                       font-style: italic;
+                       margin-right: 1rem;
+                       border: 5px solid transparent;
+                       white-space: nowrap; 
+                      }
+.itembuttons li button:hover{
+                             background-color: chocolate;
+                             color: yellow;
+                             cursor: pointer;
+                             border: none;
+                            }
+.navbar-div2search{
+                   margin-left: 1%;
+                  }
+.searchinput{
+             width: 5.5rem;    
+            }
+.ordertoggler{
+              display: flex;
+              text-align: center;
+              gap: none;
+              list-style: none;           
+              display: block;
+              z-index: 999;
+             }
+.orderbuttons{
+              flex-direction: column;
+              align-items: flex-start;
+              text-align: center;
+              gap: 0.3;
+              list-style: none;
+              position: absolute;
+              margin-top: 15%;
+              height: 18vh;
+              width: 60px;
+              top: 0;
+              right: 0;
+              margin-right: 3.5%;
+              border-radius: 1rem;
+              padding-top: 2.5rem;
+              padding-left: 1rem;
+              padding-right: 1rem;
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+              backdrop-filter: blur(3px);
+              background: transparent;
+             }
+.orderbuttons li button{
+                        text-decoration: none;
+                        color: red;
+                        background: #fffafa;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        border: 2px solid transparent;
+                        white-space: nowrap; 
+                       }
+.orderbuttons li button:hover{
+                              background-color: chocolate;
+                              color: yellow;
+                              cursor: pointer;
+                             }    
+  
+                          }
+    
