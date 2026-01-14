@@ -7,6 +7,9 @@
         $('.lightmodebutton').removeClass('mediumscreenhide');
         $('.mainheadings').css('color', 'yellow');
         $('.whydescriptions').css('color', 'yellow');
+        $('.orderquantityinput').each(function() {
+            $(this).css('backgroundColor', 'transparent');
+        })
     })
 }
 {
@@ -17,6 +20,9 @@
         $('.lightmodebutton').addClass('mediumscreenhide');
         $('.mainheadings').css('color', 'red');
         $('.whydescriptions').css('color', 'red');
+        $('.orderquantityinput').each(function() {
+            $(this).css('backgroundColor', '#fffafa');
+        })
     })
 }
 {
@@ -3318,4 +3324,5 @@
             }
         });
     });
+
 } */
